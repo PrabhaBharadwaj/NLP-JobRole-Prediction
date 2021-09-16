@@ -40,11 +40,12 @@ uvicorn app:app --reload
 Path: 
 http://127.0.0.1:8000/docs
 
-![image](https://user-images.githubusercontent.com/66779952/133581801-d2a0319b-dedd-4516-81c9-eb103d5fa93d.png)
+
+![image](https://user-images.githubusercontent.com/66779952/133582409-509fba5e-4dfb-4c21-ab04-8491b38deed4.png)
 
 
+![image](https://user-images.githubusercontent.com/66779952/133582352-691c95a5-1722-4003-b6bb-1ca267c099e4.png)
 
-![image](https://user-images.githubusercontent.com/66779952/133581891-32f98e04-4f21-4f9a-9779-015247c0cd18.png)
 
 
 
