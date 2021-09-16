@@ -32,10 +32,20 @@ deploy your model in the form of an API endpoint (any API framework will do, but
 Submit an updated test file with a new third column called "Type". The type will contain one of the 16 classes
 
 
-##### Note: Here "text_classification.joblib" is huge file so ITS NOT uploaded in github, Due to this missing joblib file, couldnot deploy in Heroku.
+##### Note: Here "text_classification.joblib.BZ2" is huge file so ITS NOT uploaded in github, Due to this missing joblib file, couldnot deploy in Heroku.
 But can run this below file in local to see the API
 
 uvicorn app:app --reload
+
+Path: 
+http://127.0.0.1:8000/docs
+
+![image](https://user-images.githubusercontent.com/66779952/133581507-727f45fa-62d4-463e-a16e-29f6fd568cbc.png)
+
+
+![image](https://user-images.githubusercontent.com/66779952/133581559-1c400808-7123-4d2a-b088-afb0ec5ac994.png)
+
+
 
 -------------------------------------------------------------------------
 
@@ -144,4 +154,8 @@ This is Classification problem so used different Classification related evaluati
 #### 4.Check in all code in Github:
 
 https://github.com/PrabhaBharadwaj/NLP-JobRole-Prediction
+
 #### 5.Deployed code via Heroku :
+
+Here "text_classification.joblib.BZ2" is huge file so ITS NOT uploaded in github, Due to this missing joblib file, couldnot deploy in Heroku.
+But can run this below file in local to see the API
