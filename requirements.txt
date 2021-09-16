@@ -11,4 +11,3 @@ gunicorn==19.9.0
 httptools
 joblib
 jsonify
-bz2
