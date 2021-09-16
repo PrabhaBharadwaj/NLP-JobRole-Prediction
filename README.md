@@ -32,6 +32,7 @@ deploy your model in the form of an API endpoint (any API framework will do, but
 Submit an updated test file with a new third column called "Type". The type will contain one of the 16 classes
 
 
+##### Note: Here "text_classification.joblib" is huge file so to uploaded in github
 
 -------------------------------------------------------------------------
 
