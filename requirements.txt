@@ -10,7 +10,7 @@ uvicorn
 gunicorn==19.9.0
 httptools
 joblib
-unicodedata
 spacy-model-en_core_web_md
 jsonify
 re
+gzip
