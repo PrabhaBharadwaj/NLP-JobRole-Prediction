@@ -16,7 +16,7 @@ import re
 import unicodedata
 from pydantic import BaseModel
 from joblib import load
-import gzip
+import bz2
 
 
 
@@ -33,8 +33,8 @@ app = FastAPI()
 # This for not zipped file
 #pipeline = load("text_classification.joblib")
 
-# This for gzip zipped file
-with gzip.GzipFile("text_classification.joblib" + '.gz', 'rb') as fo:  # doctest: +ELLIPSIS
+# This for bz2 zipped file
+with bz2.BZ2File("text_classification.joblib" + '.bz2', 'rb') as fo:  # doctest: +ELLIPSIS
 	pipeline = load(fo)
 
 
