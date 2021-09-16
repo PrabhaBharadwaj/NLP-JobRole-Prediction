@@ -16,6 +16,7 @@ import re
 import unicodedata
 from pydantic import BaseModel
 from joblib import load
+import gzip
 
 
 
@@ -29,7 +30,13 @@ class resource_type(BaseModel):
 app = FastAPI()
 
 # 4. Call the joblib model file
-pipeline = load("text_classification.joblib")
+# This for not zipped file
+#pipeline = load("text_classification.joblib")
+
+# This for gzip zipped file
+with gzip.GzipFile("text_classification.joblib" + '.gz', 'rb') as fo:  # doctest: +ELLIPSIS
+	pipeline = load(fo)
+
 
 # 5. Index route, opens automatically on http://127.0.0.1:8000
 #@app is fastapi imported object app
